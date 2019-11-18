@@ -1,8 +1,9 @@
 import React from 'react';
-import {View,Text,ImageBackground} from 'react-native';
+import { Dimensions, ImageBackground, Image, Text, View } from 'react-native';
 import {Button} from 'native-base';
 
 var myBackground = require('../assets/icons/landing.jpg');
+var {height, width} = Dimensions.get('window');
 
 class Landing extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class Landing extends React.Component {
           <View style={styles.viewStyle}>
             <Text style={styles.titleStyle}>Welcome to PokemonFun!</Text>
             <Button
-              block={true}
+              block
               style={styles.buttonStyle}
               onPress={()=>this.props.switchScreen('search')}
             >

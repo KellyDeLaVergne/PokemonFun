@@ -11,11 +11,13 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "icon": "./assets/icons/app.png",
+    "loading": {
+      "icon": "./assets/icons/loading.png",
+      "hideExponentText": false
+    },
+    "packagerOpts": {
+      "assetExts": ["ttf", "mp4"]
     },
     "updates": {
       "fallbackToCacheTimeout": 0

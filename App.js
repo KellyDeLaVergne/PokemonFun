@@ -8,8 +8,8 @@ export default class App extends React.Component {
     currentScreen: "landing"
   }
 
-  switchScreen = (currentScreen) => {
-    this.setState({currentScreen});
+  switchScreen = (screen) => {
+    this.setState({currentScreen: screen})
   }
   renderScreen = () => {
     if(this.state.currentScreen === "landing") {
@@ -35,6 +35,6 @@ export default class App extends React.Component {
 const styles = {
   container: {
     flex: 1,
-    marginTop: Platform.OS === "android" ? 24 : 0
+    marginTop: Platform.OS === 'android' ? 24 : 0
   }
 }

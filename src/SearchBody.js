@@ -1,6 +1,7 @@
 import React from 'react';
-import { ScrollView,Text,Image,View,Dimensions } from 'react-native';
+import { ScrollView,Text,ImageBackground, Image, View,Dimensions } from 'react-native';
 import { ListItem,List } from 'native-base';
+import axios from 'axios';
 
 var height = Dimensions.get('window').height;
 var width = Dimensions.get('window').width;
@@ -11,9 +12,10 @@ class SearchBody extends React.Component {
     if(!pokemon) {
       return<View/>
     }
+    console.log(pokemon.name)
     return(
-      <Image style={styles.backgroundImage}
-        source={{uri: 'http://pokemongolive.com/img/posts/raids_loading.png'}}
+      <ImageBackground style={{width: '100%', height: '100%'}}
+        imageRef={{uri: 'https://pokemongolive.com/img/posts/raids_loading.png'}}
       >
         <ScrollView style={{flex: 1}}>
             <Text style={styles.header}>#{pokemon.id} - {pokemon.name.toUpperCase()}</Text>
@@ -46,19 +48,12 @@ class SearchBody extends React.Component {
                 </List>                                 
             </View>
         </ScrollView>
-      </Image>
+      </ImageBackground>
     )
   }
 }
 
 const styles = {
-  backgroundImage: {
-    flex: 1,
-    resizeMode: 'cover',
-    height: height,
-    width: width,
-
-  },
   header: {
     fontSize: 30,
     color: 'red',

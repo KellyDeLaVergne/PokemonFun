@@ -15,7 +15,7 @@ class SearchBody extends React.Component {
     console.log(pokemon.name)
     return(
       <ImageBackground style={{width: '100%', height: '100%'}}
-        imageRef={{uri: 'https://pokemongolive.com/img/posts/raids_loading.png'}}
+        source={{uri: 'https://pokemongolive.com/img/posts/raids_loading.png'}}
       >
         <ScrollView style={{flex: 1}}>
             <Text style={styles.header}>#{pokemon.id} - {pokemon.name.toUpperCase()}</Text>

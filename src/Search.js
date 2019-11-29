@@ -62,6 +62,7 @@ class Search extends React.Component {
             </Button>
 
         </Header>
+        <Text style={styles.textStyle}>Enter a Pokemon's name or number and hit Search to see their stats!</Text>
           {this.renderBody()}
       </View>
     )
@@ -72,6 +73,12 @@ class Search extends React.Component {
 const styles = {
   viewStyle: {
     flex: 1
+  },
+  textStyle: {
+    fontSize: 20,
+    textAlign: 'center',
+    color: 'red',
+    padding: 20
   }
 }
 export default Search;

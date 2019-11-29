@@ -17,7 +17,10 @@
       "hideExponentText": false
     },
     "packagerOpts": {
-      "assetExts": ["ttf", "mp4"]
+      "assetExts": [
+        "ttf",
+        "mp4"
+      ]
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -27,6 +30,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Followed the tutorial by tscans https://github.com/tscans/PokeSearch.  Only publishing to show progress",
+    "githubUrl": "https://github.com/KellyDeLaVergne/PokemonFun"
   }
 }
